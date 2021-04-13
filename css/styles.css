@@ -24,14 +24,6 @@ main {
     box-shadow: 3px 3px 10px 0px;
 }
 
-.loading {
-    border: 10px solid white;
-    border-top: 10px solid orange;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: rotate 1s linear infinite;
-}
 
 .allresults:nth-child(1) {
     background-color: skyblue;
@@ -47,6 +39,15 @@ main {
 
 .allresults:nth-child(7) {
     background-color: green;
+}
+
+.loading {
+    border: 10px solid white;
+    border-top: 10px solid orange;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: rotate 1s linear infinite;
 }
 
 @keyframes rotate {
