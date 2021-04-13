@@ -14,7 +14,6 @@ async function getTheApi() {
         const result = await response.json();
         const theResults = result.results;
 
-        console.log(theResults);
         containerDiv.innerHTML = "";
 
         for(i = 0; i < theResults.length; i++) {
