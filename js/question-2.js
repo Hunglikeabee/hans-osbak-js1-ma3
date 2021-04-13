@@ -31,7 +31,7 @@ async function getTheApi() {
 
     }
     catch(error) {
-        containerDiv.innerHTML = "We encountered an error with the API"
+        containerDiv.innerHTML = `<div class="majorerror">We encountered an error with the API</div>`
     }
     finally {
         console.log("I wanted to be in the console!");
