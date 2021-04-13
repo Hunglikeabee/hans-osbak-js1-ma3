@@ -1,0 +1,72 @@
+h1 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.containerDiv {
+    display: grid;
+}
+
+.allresults {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 3px 3px 10px 0px;
+}
+
+.loading {
+    border: 10px solid white;
+    border-top: 10px solid orange;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: rotate 1s linear infinite;
+}
+
+.allresults:nth-child(1) {
+    background-color: skyblue;
+  }
+
+.allresults:nth-child(3) {
+    background-color: orange;
+}
+
+.allresults:nth-child(5) {
+    background-color: pink;
+}
+
+.allresults:nth-child(7) {
+    background-color: green;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .containerDiv {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .containerDiv {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
